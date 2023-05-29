@@ -1,5 +1,6 @@
 import sys
 import random
+import time
 import re
 
 choice = None
@@ -56,13 +57,6 @@ while choice != "0":
             else:
                 return False
 
-        def play_again(game):
-            while True:
-                play_again = input("Want to play again? (Yes No): ")
-                if play_again.lower() != "y":
-                    break
-            print("Dziękujemy za grę!")
-
         for _ in word:
             user_word.append("_")
 
@@ -82,6 +76,8 @@ while choice != "0":
                     no_of_tries -= 1
                     if no_of_tries == 0:
                         print("Game over!")
+                        print("Program will close in 5 seconds...")
+                        time.sleep(5)
                         sys.exit(0)
                 else:
                     for index in found_index:
@@ -89,5 +85,7 @@ while choice != "0":
 
                     if "".join(user_word) == word:
                         print("Bravo that's the word!")
+                        print("Program will close in 5 seconds...")
+                        time.sleep(5)
                         sys.exit(0)
             show_state_of_game()
