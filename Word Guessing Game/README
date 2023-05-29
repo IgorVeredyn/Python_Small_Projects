@@ -1,0 +1,50 @@
+# Word Guessing Game
+
+This is a simple word guessing game implemented in Python. The player has 5 tries to guess the correct word. Have fun playing!
+
+## How to Play
+
+1. Run the script in a Python environment.
+2. You will be presented with a menu:
+
+```
+Hi traveler!
+This is a simple word guessing game, you have 5 tries.
+Enjoy!
+Choose a number:
+0 - exit
+1 - play a single game
+```
+
+3. Choose an option by entering the corresponding number.
+   - Select "0" to exit the game.
+   - Select "1" to start a single game.
+
+4. If you choose to play a single game:
+   - A word will be randomly selected from the word list.
+   - You need to enter a letter and guess the word.
+   - You have 5 tries to guess the correct word.
+   - Avoid entering invalid inputs such as more than one letter, numbers, or capital letters.
+
+5. The game will display the current state of the word, the number of trials left, and the used letters.
+
+6. If you guess the word correctly, you win the game.
+   - The game will congratulate you and exit.
+   - If you don't guess the word within the allowed number of tries, you lose the game.
+   - The game will display "Game over!" and exit.
+
+7. After the game ends, you will be prompted to play again:
+   - Enter "Yes" to play another game.
+   - Enter "No" to exit the game.
+
+## Requirements
+
+- Python 3.x
+
+## Notes
+
+- You can customize the word list by adding your own words to the `word_list` variable.
+- The game ensures that the same letter is not counted multiple times.
+- The game handles invalid inputs such as entering more than one letter, numbers, or capital letters.
+
+Enjoy the game!
